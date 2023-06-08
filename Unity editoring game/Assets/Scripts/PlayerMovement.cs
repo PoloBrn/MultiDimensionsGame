@@ -1,4 +1,7 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -11,14 +14,7 @@ public class PlayerMovement : MonoBehaviour
     public float jumpHeight = 5f;
     public bool isGrounded;
 
-    void Start()
-    {
-        // Masquer la souris
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-    }
-
-    void FixedUpdate()
+ void FixedUpdate()
     {
         isGrounded = Physics.Raycast(transform.position, -Vector3.up, 1f);
     }

@@ -44,4 +44,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c673361c0ed834458bcf0862c92f2f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: Home
+  levelToLoad: 
